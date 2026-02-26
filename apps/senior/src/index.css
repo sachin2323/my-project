@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-warm-bg: #FEF9F2;
+  --color-warm-primary: #F4A261;
+  --color-warm-secondary: #E76F51;
+  --color-warm-text: #264653;
+  --color-warm-accent: #2A9D8F;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--color-warm-text);
+  background-color: var(--color-warm-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Dignity First Utilities */
+.btn-giant {
+  @apply w-full h-32 text-2xl font-bold rounded-2xl shadow-lg transition-transform active:scale-95 flex items-center justify-center gap-4;
+}
